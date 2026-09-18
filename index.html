@@ -50,6 +50,7 @@
   .top .tag { font-family: var(--mono); font-size: 11px; letter-spacing: .14em; text-transform: uppercase; color: var(--muted); display: flex; align-items: center; gap: 10px; }
   .top .tag i { width: 6px; height: 6px; border-radius: 50%; background: var(--accent); box-shadow: 0 0 12px var(--accent); animation: pulse 2.4s ease-in-out infinite; }
   @keyframes pulse { 50% { opacity: .35; } }
+  @media (max-width: 600px) { .top { flex-direction: column; align-items: flex-start; gap: 12px; } .brand div { line-height: 1.15; } }
 
   /* headline */
   .head { padding: clamp(40px, 8vh, 88px) 0 clamp(28px, 5vh, 48px); display: grid; grid-template-columns: 1.4fr 1fr; gap: 32px; align-items: end; }
