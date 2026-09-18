@@ -6,6 +6,7 @@ Static site, no build step. Deploy the whole folder as-is.
     /cinematic/  design 1, dark cinematic (three.js, GSAP, Alpine from CDN)
     /cyan/       design 2, navy and cyan
     /mint/       design 3, mint editorial (31 pages in one file, hash routing)
+    /mobile/     design 4, mobile-first (light, app-like, no libraries)
 
 ## Cloudflare Pages
 
