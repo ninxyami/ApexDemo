@@ -7,6 +7,7 @@ Static site, no build step. Deploy the whole folder as-is.
     /cyan/       design 2, navy and cyan
     /mint/       design 3, mint editorial (31 pages in one file, hash routing)
     /mobile/     design 4, mobile-first (light, app-like, no libraries)
+    /blue/       design 5, cobalt (loader, dot field, stacking deck, spotlight, floating art)
 
 ## Cloudflare Pages
 

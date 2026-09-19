@@ -98,6 +98,20 @@
   .c4 h2 em { color: #F2542D; }
   @media (min-width: 1100px) { .grid { grid-template-columns: repeat(4, 1fr); gap: 14px; } .card h2 { font-size: 26px; } .card .desc { font-size: 13.5px; } .shot { height: 190px; } }
   @media (min-width: 700px) and (max-width: 1099px) { .grid { grid-template-columns: 1fr 1fr; } }
+  /* card 5: cobalt */
+  .c5 .shot { background: #0F3DDB; }
+  .c5 .bdots { position: absolute; inset: 0; background-image: radial-gradient(circle, rgba(168,216,255,.45) 1px, transparent 1.6px); background-size: 20px 20px; animation: dotsWave 5s ease-in-out infinite; }
+  .c5 .bar i { background: rgba(255,255,255,.35); }
+  .c5 .lines i { background: #fff; height: 9px; }
+  .c5 .deckm { position: absolute; right: 16px; top: 44px; width: 96px; height: 80px; }
+  .c5 .deckm i { position: absolute; left: 0; right: 0; height: 30px; border-radius: 6px; background: #fff; box-shadow: 0 8px 16px rgba(4,20,63,.35); transition: transform .7s var(--ease), opacity .7s; }
+  .c5 .deckm i:nth-child(1) { top: 0; transform: rotate(-2deg) scale(.92); opacity: .55; } .c5 .deckm i:nth-child(2) { top: 20px; transform: rotate(1.5deg) scale(.96); opacity: .8; } .c5 .deckm i:nth-child(3) { top: 40px; }
+  .c5:hover .deckm i:nth-child(1) { transform: translateY(-12px) rotate(-3deg) scale(.88); opacity: .3; } .c5:hover .deckm i:nth-child(2) { transform: translateY(-6px) rotate(2deg) scale(.94); opacity: .65; }
+  .c5 .pillm { position: absolute; left: 50%; bottom: 12px; transform: translateX(-50%); height: 22px; padding: 0 8px; border-radius: 999px; background: #04143F; display: flex; align-items: center; gap: 6px; box-shadow: inset 0 0 0 1px rgba(255,255,255,.15); }
+  .c5 .pillm i { width: 14px; height: 3px; border-radius: 2px; background: rgba(255,255,255,.6); } .c5 .pillm b { width: 14px; height: 14px; border-radius: 50%; background: #FFD84D; }
+  .c5 h2 em { color: #FFD84D; }
+  @media (min-width: 1100px) { .grid { grid-template-columns: repeat(5, 1fr); gap: 12px; } .card { padding: 14px 14px 16px; gap: 14px; } .card h2 { font-size: 22px; } .card .desc { font-size: 13px; } .shot { height: 170px; } .card .chips { display: none; } }
+
 
 
   /* mini mockups */
@@ -179,16 +193,16 @@
       <svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M12 3L21 20H3L12 3Z" stroke="#c9f27a" stroke-width="1.8" stroke-linejoin="round"/><path d="M12 10L16.5 18.5H7.5L12 10Z" fill="#c9f27a"/></svg>
       <div>Apex Technologies<small>Website design directions</small></div>
     </div>
-    <div class="tag"><i></i>Four previews · September 2026</div>
+    <div class="tag"><i></i>Five previews · September 2026</div>
   </header>
 
   <section class="head">
-    <h1 aria-label="Four directions. One company. Pick the one that feels right.">
-      <span class="w"><span style="--i:0">Four</span></span> <span class="w"><span style="--i:1">directions.</span></span><br>
+    <h1 aria-label="Five directions. One company. Pick the one that feels right.">
+      <span class="w"><span style="--i:0">Five</span></span> <span class="w"><span style="--i:1">directions.</span></span><br>
       <span class="w"><span style="--i:2">One</span></span> <span class="w"><span style="--i:3">company.</span></span><br>
       <span class="w"><span style="--i:4"><em>Pick</em></span></span> <span class="w"><span style="--i:5"><em>the</em></span></span> <span class="w"><span style="--i:6"><em>one</em></span></span> <span class="w"><span style="--i:7"><em>that</em></span></span> <span class="w"><span style="--i:8"><em>fits.</em></span></span>
     </h1>
-    <p>Same services, same copy, four different personalities. Each link opens a working preview. <b>Company name, logo and contact details are placeholders</b> and swap in once they are final.</p>
+    <p>Same services, same copy, five different personalities. Each link opens a working preview. <b>Company name, logo and contact details are placeholders</b> and swap in once they are final.</p>
   </section>
 
   <section class="grid" aria-label="Design previews">
@@ -255,11 +269,26 @@
       </div>
       <div class="foot"><div class="chips"><span class="chip">No libraries</span><span class="chip">Snap carousel</span><span class="chip">Tap to call</span></div><span class="go">Open preview <svg viewBox="0 0 24 24"><path d="M7 17L17 7M8 7h9v9"/></svg></span></div>
     </a>
+    <a class="card c5" style="--i:4" href="blue/">
+      <div class="meta"><b>05</b><span>Cobalt</span></div>
+      <div class="shot" aria-hidden="true">
+        <div class="bdots"></div>
+        <div class="bar"><i style="width:26px"></i><i style="width:60px"></i></div>
+        <div class="lines"><i style="--i:0;width:130px"></i><i style="--i:1;width:100px"></i><i style="--i:2;width:118px;background:#FFD84D"></i></div>
+        <div class="deckm"><i></i><i></i><i></i></div>
+        <div class="pillm"><i></i><i></i><i></i><b></b></div>
+      </div>
+      <div>
+        <h2>Cobalt, bold, <em>the best of all.</em></h2>
+        <p class="desc" style="margin-top:8px">Blue ground, yellow accent, heavy type. Loader, dot field, stacking deck, spotlight text, floating art. Mobile friendly without the app feel.</p>
+      </div>
+      <div class="foot"><div class="chips"><span class="chip">Dot field</span><span class="chip">Deck</span><span class="chip">Spotlight</span></div><span class="go">Open preview <svg viewBox="0 0 24 24"><path d="M7 17L17 7M8 7h9v9"/></svg></span></div>
+    </a>
   </section>
 
   <footer class="foot">
     <span><b>Apex Technologies</b> · Canada</span>
-    <span>Four working previews · placeholder name and contact details</span>
+    <span>Five working previews · placeholder name and contact details</span>
   </footer>
 </div>
 
